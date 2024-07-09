@@ -1,5 +1,13 @@
-let num = _ =>
-    10;
+function parent() {
+    let a = 10;
 
-
-console.log(num())
+    function child() {
+        console.log(`from child ${a}`);
+        function grand() {
+            console.log(`from grand ${a}`)
+        }
+        grand();
+    }
+    child()
+}
+parent() //10 //10
