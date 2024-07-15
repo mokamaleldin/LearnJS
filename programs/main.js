@@ -1,1 +1,0 @@
-console.log("%cmkee %cweb %cschool", "color:red ; font-size:40px", "font-weight: bold ; color:green ; font-size:40px", 'color: white; font-size: 40px; background-color: blue;');
