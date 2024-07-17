@@ -1,25 +1,16 @@
-/*
-  Regular Expression
+//every things i don't write it will be false
 
-  Syntax
-  /pattern/modifier(s);
-  new RegExp("pattern", "modifier(s)")
+const myObject = {
+    a: 1,
+    b: 2,
+}
 
-  Modifiers => Flags
-  i => case-insensitive
-  g => global
-  m => Multilines
+Object.defineProperties(myObject, {
+    c: { value: 3, configurable: true },
+    b: { value: 4, configurable: true },
+    d: { value: 5, configurable: true },
+})
 
-  Search Methods
-  - match(Pattern)
+console.log(myObject) //{a: 1, b: 4, c: 3, d: 5}
 
-  Match
-  -- Matches A String Against a Regular Expression Pattern
-  -- Returns An Array With The Matches
-  -- Returns null If No Match Is Found.
-*/
-
-let myString = "Hello Elzero web scool I love elzero";
-let regex = /elzero/ig;
-
-console.log(myString.match(regex))
+console.log(Object.getOwnPropertyDescriptor(myObject, 'c')) //{value: 3, writable: false, enumerable: false, configurable: true}
