@@ -1,0 +1,12 @@
+{
+    "name":"mohamed",
+    "age":25,
+    "city":"cairo",
+    "location": {
+        "lat": 30.0444,
+        "lng": 31.2357
+    },
+    "skills": ["HTML", "CSS", "JS"],
+    "ableToWork": true,
+    "work": null
+}
